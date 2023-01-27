@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Fahrkartenautomat_tri {
+class Fahrkartenautomat {
 	public static void main(String[] args) {
 		Scanner tastatur = new Scanner(System.in);
 
@@ -18,8 +18,7 @@ class Fahrkartenautomat_tri {
 
 	// Kartenauswahl
 	public static void begruessung() {
-		System.out.println("Herzlich Willkomnen !\r\n" + "4-Fahrten-Karte AB [9,4Ø EURI (4)\r\n"
-				+ "Wählen Sie eine Fahrkarte aus:");
+		System.out.println("Herzlich Willkomnen !\r\n" + "Wählen Sie eine Fahrkarte aus:");
 
 	}
 
