@@ -28,13 +28,13 @@ public class SelectionSort {
 			 
 			 System.out.println();
 			 
-			 for (int i = 0; i<liste.length;i++) {
+			 for (int i = 0; i<liste.length; i++) {
 					for (int j = 0; j<liste.length;j++) {
-//						min = liste[0];
-//						if (liste[j] < min) {
-//							min = liste[j];
-//						}
-//						liste[i] = min;
+						
+						int tmp = liste[j];
+						if(liste[j] < tmp) {
+							liste[i] = tmp;
+						}
 					} 
 				}
 			 
