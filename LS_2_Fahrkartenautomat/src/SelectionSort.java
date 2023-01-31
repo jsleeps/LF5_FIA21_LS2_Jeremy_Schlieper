@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class SelectionSort {
 
@@ -20,27 +21,21 @@ public class SelectionSort {
 //
 //			  Beispiel:
 //
-			 int[] liste = { 4, 2, 10, 3, -5, 0, 17 };
-			 int min = 0;
-			 for (int i = 0; i<liste.length;i++) {
-					System.out.print(liste[i] + " ");
-				}
-			 
-			 System.out.println();
-			 
-			 for (int i = 0; i<liste.length; i++) {
-					for (int j = 0; j<liste.length;j++) {
-						
-						int tmp = liste[j];
-						if(liste[j] < tmp) {
-							liste[i] = tmp;
-						}
-					} 
-				}
-			 
-			 for (int i = 0; i<liste.length;i++) {
-					System.out.print(liste[i] + " ");
-				}
-	}
+		int[] numbers = { 5, 2, 9, 1, 3, 12, 123, 123, 345, 654, 7657, 86, 4, 5, 79, 0 };
+		int n = numbers.length;
 
+		for (int i = 0; i < n - 1; i++) {
+			int minIndex = i;
+			for (int j = i + 1; j < n; j++) {
+				if (numbers[j] < numbers[minIndex]) {
+					minIndex = j;
+				}
+			}
+			int temp = numbers[minIndex];
+			numbers[minIndex] = numbers[i];
+			numbers[i] = temp;
+		}
+		System.out.println(Arrays.toString(numbers));
+
+	}
 }
